@@ -27,15 +27,7 @@ Base = declarative_base()
 
 
 def get_db():
-    """Dependency injection para obter sessão de banco de dados.
-    
-    FastAPI usa essa função para injetar uma sessão de banco
-    em cada requisição. A sessão é fechada automaticamente
-    após a requisição ser processada.
-    
-    Yields:
-        SessionLocal: Sessão ativa do banco de dados
-    """
+
     db = SessionLocal()
 
     try:

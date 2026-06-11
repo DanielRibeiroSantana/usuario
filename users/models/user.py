@@ -9,15 +9,7 @@ from sqlalchemy.sql import func
 
 
 class User(Base):
-    """Modelo ORM para usuários.
-    
-    Atributos:
-        id: Identificador único (chave primária)
-        name: Nome completo do usuário (até 100 caracteres)
-        email: Email único do usuário (até 255 caracteres)
-        password: Senha criptografada do usuário
-        created_at: Data e hora de criação (preenchida automaticamente)
-    """
+
     # Nome da tabela no banco de dados
     __tablename__ = 'users'
     

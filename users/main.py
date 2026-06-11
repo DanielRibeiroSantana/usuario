@@ -27,9 +27,5 @@ app.include_router(users_router)
 
 @app.get('/')
 def health_check():
-    """Endpoint de verificação de saúde da API.
-    
-    Returns:
-        dict: Status da aplicação
-    """
+
     return {'status': 'online'}
